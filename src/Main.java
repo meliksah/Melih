@@ -3,9 +3,9 @@ import java.util.List;
 
 public class Main {
     static int pow(int base, int power) {
-        int result = base;
+        int result = 1;
         for(int i = 0; i < power; i++) {
-            result *=base;
+            result *= base;
         }
         return result;
     }
@@ -18,7 +18,9 @@ public class Main {
         for(int i = 0; i < rows; i++) {
             int number = 0;
             for(int j = 0; j < columns; j++) {
+                //number += input[i][j] * (pow(10, (columns - j -1)));
                 number += input[i][j] * (Math.pow(10, (columns - j -1)));
+
             }
             numbers.add(number);
         }
