@@ -22,10 +22,16 @@ public class Main {
             }
             numbers.add(number);
         }
+        int max = 0;
 
         for(Integer number: numbers) {
+            if (number > max) {
+                max = number;
+            }
             System.out.println(number);
         }
+        System.out.println("Maximum is: " + max);
+
 
     }
 }
