@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class BuildNumbersFrom2DMatrix {
     static int pow(int base, int power) {
         int result = 1;
         for(int i = 0; i < power; i++) {
